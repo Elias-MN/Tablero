@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
+    <title>App</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="icons">
+            <img class="imgMenu" onclick="addElementToCanvas(this)" src="./img/pc.png" alt="pc">
+            <img class="imgMenu" onclick="addElementToCanvas(this)" src="./img/router.png" alt="router">
+            <img class="imgMenu" onclick="addElementToCanvas(this)" src="./img/server.png" alt="server">
+            <img class="imgMenu" onclick="addElementToCanvas(this)" src="./img/cloud.png" alt="cloud">
+        </div>
+        <div id="buttonsAction">
+            <button onclick="clearCanvas()">Limpiar todo</button>
+            <button id="eraserButton" onclick="activateEraser()">Goma de borrar</button>
+            <button id="lineButton" onclick="activateLine()">Pintar linea</button>
+        </div>
+    </div>
+    <div>
+        <canvas id="canvas" onclick="clickCanvas(event)"></canvas>
+    </div>
+    <div id="eraser" style="display: none;"></div>
+</body>
+
+</html>
