@@ -23,8 +23,10 @@
         <div id="buttonsAction">
             <button onclick="clearCanvas()">Limpiar todo</button>
             <button id="eraserButton" onclick="activateEraser()">Goma de borrar</button>
-            <button id="lineButton" onclick="activateLine()">Pintar linea</button>
+            <button id="lineButton" onclick="activatePainting()">Pintar linea</button>
+            <button id="textButton" onclick="activateText()">Escribir</button>
         </div>
+        <textarea id="inputText" placeholder="Texto a escribir" cols="50"></textarea>
     </div>
     <div>
         <canvas id="canvas" onclick="clickCanvas(event)"></canvas>

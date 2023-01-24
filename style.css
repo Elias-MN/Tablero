@@ -9,6 +9,11 @@ body {
     min-width: 450px;
 }
 
+#inputText {
+    resize: none;
+    padding: 5px;
+}
+
 .draggable {
     width: 100px;
     position: absolute;
